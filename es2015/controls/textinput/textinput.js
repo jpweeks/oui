@@ -20,7 +20,7 @@ class TextInput extends React.Component {
 
     return <div style={{ ...base, ...style, display: 'flex' }}>
        <label>{label}</label>
-       <input type='text' value={value} style={{ ...defaultStyle }} maxLength='6'
+       <input type='text' value={value} style={{ ...defaultStyle }}
          onInput={evt => conditionOnChange(evt.target.value)}
          onChange={evt => conditionOnSubmit(evt.target.value)} />
      </div>
